@@ -1,0 +1,29 @@
+﻿{
+  "components": {
+    "configs": [
+      {
+        "path": "model/components.json",
+        "root": "model/"
+      },
+      {
+        "path": "lib/weblib/components/components.json",
+        "root": "lib/weblib/components/"
+      }
+    ]
+  },
+  "base": {
+    "path": "lib/weblib/lib/BASE/BASE.js",
+    "root": "lib/weblib/lib/BASE/",
+    "namespaces": {
+      "components": "lib/weblib/components",
+      "app": "app/"
+    },
+    "objects": {
+      "jQuery.fn.select2": "lib/weblib/plugins/select2351/select2.js"
+    },
+    "root": "lib/BASE/"
+  },
+  "css": {
+    "files": [ "lib/weblib/css/material.css", "lib/weblib/css/reset-min.css" ]
+  }
+}

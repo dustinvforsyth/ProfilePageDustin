@@ -1,0 +1,49 @@
+﻿<div database-manager controller="components.gem.forms.DatabaseManager">
+    <style component="css-helpers"></style>
+    <style>
+        [database-manager] {
+            position: relative;
+            padding: 15px;
+            z-index: 1;
+        }
+
+        [database-manager-container] {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        [database-manager-table-container] {
+            position: absolute !important;
+            top: 0;
+            right: 0;
+            left: 265px;
+            bottom: 0;
+        }
+
+        [database-manager-list] {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #fff !important;
+        }
+    </style>
+    <div database-manager-container>
+        <div tag="table-names-list"
+             database-manager-list
+             table-form-data
+             component="ui-collection"
+             item-component="./TableNameListItem.html"
+             item-height="25"
+             controller="components.material.layouts.List"
+             class="gem-inset absolute-fill-parent">
+        </div>
+        <div tag="table-container" database-manager-table-container>
+
+        </div>
+    </div>
+
+</div>

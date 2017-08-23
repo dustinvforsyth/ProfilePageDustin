@@ -1,0 +1,40 @@
+﻿<div entity-form controller="components.gem.forms.IndependentEntityForm">
+    <style component="./../Theme.html"></style>
+    <style>
+        [entity-form] {
+            position: relative;
+        }
+
+        [entity-form-fields] {
+            position: absolute !important;
+            top: 15px;
+            left: 15px;
+            bottom: 65px;
+            right: 15px;
+            overflow-y: auto;
+        }
+
+        [entity-form-buttons] {
+            position: absolute;
+            right: 15px;
+            height: 35px;
+            bottom: 15px;
+            left: 15px;
+            text-align: right;
+        }
+    </style>
+    <div tag="form" entity-form-fields component="./DynamicForm.html">
+
+    </div>
+    <div entity-form-buttons>
+        <div tag="actions-state-manager" component="state-manager">
+            <div tag="add-actions" name="add">
+                <button tag="save" style="margin-left: 15px;" class="gem-button">Save</button>
+                <button tag="cancel" class="gem-button">Cancel</button>
+            </div>
+            <div tag="edit-actions" name="edit">
+                <button tag="ok" class="gem-button">OK</button>
+            </div>
+        </div>
+    </div>
+</div>

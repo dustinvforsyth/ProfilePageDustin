@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dustin Forsyth's Profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+<style>
+    /* Large desktops and laptops */
+    @media (min-width: 1200px) {
+    }
+
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+    }
+
+    /* Portrait tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /* Landscape phones and portrait tablets */
+    @media (max-width: 767px) {
+    }
+
+    /* Portrait phones and smaller */
+    @media (max-width: 480px) {
+        #name {
+            font-size: 20px;
+        }
+
+        #subHeading {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        #name {
+            font-size: 20px;
+        }
+
+        #subHeading {
+            font-size: 16px;
+        }
+
+        body {
+            background-image: none;
+            background-color: darkgray;
+        }
+    }
+
+    body {
+        background-image: url("images/DSC_8018.jpg");
+        background-size: 125%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-y: auto;
+    }
+
+    #name {
+        font-size: 100px;
+        padding-left: 10px;
+    }
+
+    #subHeading {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .text-primary {
+        font-family: "Architects Daughter", cursive;
+        color: black;
+    }
+
+    #text-box {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        background-color: rgba(255,255,255, 0.6);
+        display: block;
+    }
+
+    #container {
+        position: absolute;
+        top: auto;
+        left: 0;
+        width: 65%;
+        height: auto;
+
+    }
+
+    #mainContent {
+        font-size: 30px;
+        max-width: 1100px;
+        max-height: 100%;
+        padding-left: 25px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .visible-hidden {
+        visibility: hidden;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+    .webImages{
+        border: 3px inset;
+        height:250px;
+        opacity: 1;
+        margin:10px;
+    }
+</style>
+<body id="body" background="images/DSC_8018.jpg">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBarButtons">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="webBtn" class="navbar-brand" href="#" data-toggle="collapse" data-target=".navbar-collapse">DVF Developer Profile</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navBarButtons">
+                <ul class="nav navbar-nav">
+                    <li><a id="experBtn" href="#">Experience</a></li>
+                    <li><a id="completeBtn" href="#">Completed Work</a></li>
+                    <li><a id="skillsBtn" href="#">Hobbies/other Skills</a></li>
+                    <li><a id="servBtn" href="#">Request Services</a></li>
+                    <li><a id="commentBtn" href="#">Customer Comments</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"> SignUp</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="text-box">
+            <div id="name" class="text-primary"><b>Dustin Forsyth</b></div>
+            <div id="subHeading" class="text-primary"><b>Web & Software Developer</b></div>
+            <div id="mainContent" class="text-primary">
+                <br /><br />
+                <p>
+                    Welcome to my profile page. This page is dedicated to my work and experience with Software and WebApp Development.
+                    I got my start on October 15th, 2015 when the company I was working for took a chance on me.
+                    I worked 10 hour days for months trying to learn how to program. I was blessed because I was getting paid to learn but
+                    I also had work I needed to do so it forced me to learn quickly.
+                </p><br />
+                <p>
+                    I realized quickly I had found something I really enjoyed and wanted to learn as much as I could.
+                    I had found other things in life i enjoyed but I never really felt like it was something I would want to do for a living.
+                </p><br />
+                <p>My goal with this page is to help you learn who I am and how committed I am to everything in my life.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

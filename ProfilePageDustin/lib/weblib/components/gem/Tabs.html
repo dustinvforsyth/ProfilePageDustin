@@ -1,0 +1,38 @@
+﻿<div tabs controller="components.gem.Tabs">
+    <style component="./Theme.html"></style>
+    <style>
+        [tabs] {
+            position: relative;
+            z-index: 1;
+        }
+
+        [tabs-container] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 100%;
+            overflow: visible;
+            z-index: 2;
+        }
+
+            [tabs-container] > * {
+                background-color: #F0F0F0;
+            }
+
+        [tabs-content] {
+            position: absolute !important;
+            top: 30px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+    </style>
+    <div tag="state-manager" component="state-manager" tabs-content class="gem-border gem-tab-content">
+        <embed />
+    </div>
+    <div unselectable tag="tabs-container" tabs-container>
+    </div>
+</div>

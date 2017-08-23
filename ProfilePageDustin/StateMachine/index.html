@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div component="app/Main.html"></div>
+    <script type="text/javascript" src="../lib/weblib/lib/BASE/BASE.js"></script>
+    <script>
+        BASE.require.loader.setRoot("../lib/weblib/lib/BASE");
+        BASE.require.loader.setNamespace("app", "app");
+        BASE.require([
+            "BASE.web.components"
+        ]);
+    </script>
+</body>
+</html>
